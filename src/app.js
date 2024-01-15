@@ -19,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
+  //adding comments to force redeploy
   // Query to select the first 10 rows from 'properties' table
   connection.query("SELECT * FROM properties", (err, rows, fields) => {
     if (err) {
