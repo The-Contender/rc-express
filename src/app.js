@@ -11,8 +11,6 @@ const api = require("./api");
 
 const app = express();
 
-// Enable CORS for all routes
-app.use(cors());
 app.use(compression()); // Use compression
 
 const mysql = require("mysql2");
