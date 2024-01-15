@@ -24,6 +24,12 @@ app.use(express.json());
 connection.connect();
 
 app.get("/", (req, res) => {
+  res.json({
+    message: "🦄🌈✨👋🌎🌍🌏✨🌈🦄",
+  });
+});
+
+app.get("/", (req, res) => {
   // Query to select the first 10 rows from 'properties' table
   connection.query("SELECT * FROM properties", (err, rows, fields) => {
     if (err) {
